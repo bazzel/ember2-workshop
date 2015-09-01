@@ -1,0 +1,22 @@
+header.landing {
+  text-align: center;
+  margin-top: -20px;
+  padding: 100px 0;
+  background-size: cover;
+  background: url('http://lorempixel.com/1920/500/') no-repeat center center scroll;
+}
+
+section.landing-wrapper {
+  padding: 75px 0;
+  @extend .container;
+}
+
+.landing-content {
+  @include make-row;
+  @include make-lg-column(12);
+}
+
+.section-heading {
+  margin: 30px 0;
+  font-size: 4em;
+}

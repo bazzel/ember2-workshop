@@ -1,0 +1,14 @@
+button.edit {
+  @extend .btn;
+  @extend .btn-default;
+}
+
+button.update {
+  @extend .btn;
+  @extend .btn-primary;
+}
+
+button.cancel {
+  @extend .btn;
+  @extend .btn-default;
+}

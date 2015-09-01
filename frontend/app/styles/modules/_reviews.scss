@@ -1,0 +1,5 @@
+.reviews {
+  @extend .well;
+  max-height: 350px;
+  overflow-y: scroll;
+}

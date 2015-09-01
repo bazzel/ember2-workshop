@@ -1,0 +1,8 @@
+.content-detail {
+  .caption-full {
+    @extend .clearfix;
+  }
+  h4 {
+    @include truncate;
+  }
+}

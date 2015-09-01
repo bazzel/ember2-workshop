@@ -1,0 +1,23 @@
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.content-wrapper {
+  @include container-fixed;
+  @include make-row;
+}
+
+.content-navigation {
+  @include make-md-column(2);
+}
+
+.content-main {
+  @include make-md-column(7);
+}
+
+.content-detail {
+  @include make-md-column(3);
+  position: fixed;
+  right: 0;
+}
+
