@@ -42,12 +42,12 @@
     {{#each model as |product|}}
       <div class='product'>
         <div class='thumbnail'>
-          <img src='http://lorempixel.com/320/150/technics/1/' alt=''>
+          <img src={{product.image}} alt=''>
           <div class='caption'>
-            <h4 class='pull-right'>$24.99</h4>
-            <h4><a href='#'>First Product</a>
+            <h4 class='pull-right'>${{product.price}}</h4>
+            <h4><a href='#'>{{product.title}}</a>
             </h4>
-            <p>See more snippets like this online store item at <a target='_blank' href='http://www.bootsnipp.com'>Bootsnipp - http://bootsnipp.com</a>.</p>
+            <p>{{product.description}}</p>
           </div>
           <div class='ratings'>
             <p class='pull-right'>15 reviews</p>
