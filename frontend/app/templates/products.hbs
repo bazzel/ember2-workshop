@@ -13,7 +13,7 @@
     <div class='products'>
     {{#each model as |product|}}
       <div class='product'>
-        <div class='thumbnail'>
+        <div class='thumbnail {{if product.hasDirtyAttributes 'is-dirty'}}'>
           <img src={{product.image}} alt=''>
           <div class='caption'>
             <h4 class='pull-right'>${{product.price}}</h4>
