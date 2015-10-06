@@ -1,3 +1,13 @@
+@-webkit-keyframes glow
+{
+  50% { box-shadow: 0 0 30px $brand-primary; }
+}
+
+@keyframes glow
+{
+  50% { box-shadow: 0 0 20px $brand-primary; }
+}
+
 .products {
   @include make-row;
 }
@@ -9,5 +19,10 @@
 
   h4 {
     @include truncate;
+  }
+
+  .thumbnail.is-dirty {
+    -webkit-animation: glow 2s ease-in-out infinite;
+    animation: glow 2s ease-in-out infinite;
   }
 }
