@@ -10,6 +10,9 @@ export default Ember.Controller.extend({
       this.model.save().then(() => {
         this.set('isEditing', false);
       });
+    },
+    removeImage() {
+      this.model.set('image', null);
     }
   }
 });

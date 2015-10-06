@@ -76,6 +76,17 @@
     <div class='form-group'>
       {{input value=model.price class='form-control' type='number' placeholder='Enter a price'}}
     </div>
+    <div class='form-group'>
+      {{#if model.image}}
+        <img src={{model.image}}>
+        <button {{action 'removeImage'}} type='button' class='remove pull-right'>Remove</button>
+      {{else}}
+        <img src='http://placehold.it/320x150&text=No image'>
+      {{/if}}
+      <div class='file'>
+        Browse...{{upload-file file=model.image accept='image/*'}}
+      </div>
+    </div>
     <button type='submit' class='update {{unless model.hasDirtyAttributes 'disabled'}}'>Update</button>
     <button {{action 'toggleEditing'}} type='button' class='cancel'>Cancel</button>
   </form>
