@@ -2,11 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   actions: {
-    toggleEditing: function() {
+    toggleEditing() {
       this.toggleProperty('isEditing');
       this.model.rollbackAttributes();
     },
-    submit: function() {
+    submit() {
       this.model.save().then(() => {
         this.set('isEditing', false);
       });

@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   actions: {
-    willTransition: function() {
+    willTransition() {
       var product = this.currentModel;
 
       if (product.get('hasDirtyAttributes')) {
