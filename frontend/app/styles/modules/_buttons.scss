@@ -12,3 +12,33 @@ button.cancel {
   @extend .btn;
   @extend .btn-default;
 }
+
+
+button.remove {
+  @extend .btn;
+  @extend .btn-default;
+  @extend .btn-danger;
+}
+
+// http://www.abeautifulsite.net/whipping-file-inputs-into-shape-with-bootstrap-3
+div.file {
+  @extend .btn;
+  @extend .btn-default;
+  position: relative;
+  overflow: hidden;
+  input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+  }
+}

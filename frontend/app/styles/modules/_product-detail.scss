@@ -6,3 +6,11 @@
     @include truncate;
   }
 }
+
+form {
+  img {
+    @extend .img-thumbnail;
+    @extend .center-block;
+    @extend .form-group;
+  }
+}

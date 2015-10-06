@@ -2,4 +2,7 @@
   @extend .well;
   max-height: 350px;
   overflow-y: scroll;
+  hr:last-of-type {
+    display: none;
+  }
 }
