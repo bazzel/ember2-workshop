@@ -11,7 +11,7 @@
   <div class='content-main'>
     {{partial 'carousel'}}
     <div class='products'>
-    {{#each model as |product|}}
+    {{#each filteredContent as |product|}}
       <div class='product'>
         <div class='thumbnail {{if product.hasDirtyAttributes 'is-dirty'}}'>
           <img src={{product.image}} alt=''>
