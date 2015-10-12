@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   namespace :api do
-    resources :products
+    jsonapi_resources :products
   end
 end
