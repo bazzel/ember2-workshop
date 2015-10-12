@@ -66,9 +66,12 @@
     </div>
   </div>  <!-- /.content-detail -->
 {{else}}
-<form {{action 'submit' on='submit'}} role='form' class='well'>
-    <div class='form-group'>
+  <form {{action 'submit' on='submit'}} role='form' class='well'>
+    <div class='form-group {{if model.errors.title 'has-error'}}'>
       {{input value=model.title class='form-control' placeholder='Enter a title'}}
+      {{#each model.errors.title as |error|}}
+          <div class='control-label'>{{error.message}}</div>
+      {{/each}}
     </div>
     <div class='form-group'>
       {{textarea value=model.description class='form-control' placeholder='Enter a description'}}
