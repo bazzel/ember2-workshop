@@ -16,6 +16,8 @@
     "pretender": "~0.9.0",
     "lodash": "~3.7.0",
     "Faker": "~3.0.0",
-    "font-awesome": "~4.4.0"
+    "font-awesome": "~4.4.0",
+    "moment": ">= 2.8.0",
+    "moment-timezone": ">= 0.1.0"
   }
 }
