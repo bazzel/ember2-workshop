@@ -25,11 +25,7 @@
     {{#each model.reviews as |review|}}
       <div class='row'>
         <div class='col-md-12'>
-          <span class='glyphicon glyphicon-star'></span>
-          <span class='glyphicon glyphicon-star'></span>
-          <span class='glyphicon glyphicon-star'></span>
-          <span class='glyphicon glyphicon-star'></span>
-          <span class='glyphicon glyphicon-star-empty'></span>
+          {{star-rating starCount=review.rating}}
           {{review.user}}
           <span class='pull-right'>{{moment-from-now review.createdAt}}</span>
           <p>{{review.description}}</p>
