@@ -5,5 +5,9 @@ export default DS.Model.extend({
     description: DS.attr(),
     price: DS.attr(),
     image: DS.attr(),
-    reviews: DS.hasMany('review', { async: true })
+    reviews: DS.hasMany('review', { async: true }),
+    category: DS.belongsTo('category'),
+    categoryName: Ember.computed('category', function() {
+      return this.get('category.name');
+    })
 });

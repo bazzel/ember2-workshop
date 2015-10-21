@@ -20,7 +20,7 @@
         <a href='#'>About</a>
         </li>
         {{#link-to 'products' tagName='li'}}
-          {{#link-to 'products'}}Products{{/link-to}}
+          {{#link-to 'products' (query-params category='')}}Products{{/link-to}}
         {{/link-to}}
         <li>
         <a href='#'>Contact</a>

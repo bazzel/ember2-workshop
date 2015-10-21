@@ -5,6 +5,7 @@
       <h4 class='pull-right'>${{model.price}}</h4>
       <h4><a href='#'>{{model.title}}</a>
       </h4>
+      <p class='badge'>{{model.categoryName}}</p>
       <p>{{model.description}}</p>
       <button {{action 'toggleEditing'}} type='button' class='edit'>Edit</button>
     </div>
@@ -49,6 +50,15 @@
     </div>
     <div class='form-group'>
       {{input value=model.price class='form-control' type='number' placeholder='Enter a price'}}
+    </div>
+    <div class='form-group'>
+      {{#x-select value=model.category.id class='form-control' action='selectCategory'}}
+        {{#each categories as |category|}}
+          {{#x-option value=category.id}}
+            {{category.name}}
+          {{/x-option}}
+        {{/each}}
+      {{/x-select}}
     </div>
     <div class='form-group'>
       {{#if model.image}}

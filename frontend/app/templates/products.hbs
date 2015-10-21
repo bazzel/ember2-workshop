@@ -2,9 +2,9 @@
   <div class='content-navigation'>
     <p class='lead'>Ember workShop</p>
     <div class='list-group'>
-      <a href='#' class='list-group-item'>Category 1</a>
-      <a href='#' class='list-group-item active'>Category 2</a>
-      <a href='#' class='list-group-item'>Category 3</a>
+      {{#each uniqCategories as |category|}}
+        {{#link-to 'products' (query-params category=category.name) class='list-group-item'}}{{category.name}}<small> ({{category.products.length}})</small>{{/link-to}}
+      {{/each}}
     </div>
   </div>  <!-- /.content-navigation -->
 
@@ -17,6 +17,7 @@
           <img src={{product.image}} alt=''>
           <div class='caption'>
             <h4 class='pull-right'>${{product.price}}</h4>
+            <p class='badge'>{{product.categoryName}}</p>
             <h4>{{#link-to 'products.show' product}}{{product.title}}{{/link-to}}</h4>
             <p>{{product.description}}</p>
           </div>
