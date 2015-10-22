@@ -20,6 +20,6 @@ export default Ember.Controller.extend({
 
     return products;
   }),
-  categories: Ember.computed.mapBy('model', 'category.content'),
+  categories: Ember.computed.mapBy('model', 'category'),
   uniqCategories: Ember.computed.uniq('categories')
 });
