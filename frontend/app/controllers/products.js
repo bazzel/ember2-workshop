@@ -7,7 +7,7 @@ export default Ember.Controller.extend({
   filteredContent: Ember.computed('model', 'search', 'model.@each.title', 'model.@each.description', 'category', function() {
   var products = this.model,
       search = new RegExp(this.get('search'), 'i'),
-      category = this.get('category');;
+      category = this.get('category');
 
     products = products.filter(function(product) {
       var str = product.get('title') + product.get('description');
