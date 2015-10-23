@@ -21,5 +21,7 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  database: ember2_workshop
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
