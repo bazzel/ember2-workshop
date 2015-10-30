@@ -25,7 +25,7 @@ repository
 ## Running
 
 * `cd ember-workshop/frontend`
-* `ember s`
+* `ember s --proxy https://ember2-workshop-backend.herokuapp.com`
 * Visit your app at http://localhost:4200.
 
 ## Further Reading / Useful Links
