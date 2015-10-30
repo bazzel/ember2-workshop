@@ -2,6 +2,11 @@
 
 This is a sample application used during a Kabisa workshop to demonstrate Ember.js.
 
+Please consult the [wiki](https://github.com/bazzel/ember2-workshop/wiki) for further instructions.
+
+## Demo
+Please take a look at our live [demo](https://kabisa-ember2-workshop.herokuapp.com/products).
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -22,7 +27,6 @@ repository
 * `cd ember-workshop/frontend`
 * `ember s`
 * Visit your app at http://localhost:4200.
-
 
 ## Further Reading / Useful Links
 
