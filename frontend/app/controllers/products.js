@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   queryParams: ['category'],
+  category: '',
   application: Ember.inject.controller(),
   search: Ember.computed.alias('application.search'),
   filteredContent: Ember.computed('model', 'search', 'model.@each.title', 'model.@each.description', 'category', function() {
