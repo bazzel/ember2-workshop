@@ -32,3 +32,7 @@ repository
 
 * ember: http://emberjs.com/
 * ember-cli: http://www.ember-cli.com/
+
+## Translations
+
+* [Portuguese](https://github.com/ruisalgado/ember2-workshop-pt)
